@@ -1,4 +1,4 @@
-eugenia-serv asible_hosts=10.5.169.233 ansible_user=root
+eugenia-serv ansible_host=10.5.169.233 ansible_user=root
 
 [Wordpress]
  eugenia-serv 
