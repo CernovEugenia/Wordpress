@@ -85,4 +85,4 @@
     - name: Create nginx config
       template:
         src: templates/nginx/default.j2
-        dest: /etc/nginx/site_availables/default
+        dest: /etc/nginx/site-available/default
