@@ -1,0 +1,8 @@
+---
+
+- name: ping
+  hosts: Wordpress
+  become: yes
+  tasks:
+    - name: ping_machine_cible
+      ping:
