@@ -24,3 +24,12 @@
       package:
         name: apache2
         state: absent
+
+   # MySQL
+    - name: Install MySQL
+      package:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - mysql-server
+        - python-mysqldb
