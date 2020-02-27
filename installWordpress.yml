@@ -68,10 +68,10 @@
         - ::1
         - localhost
 
-   - name: Create my.cnf
-     template:
-       src: templates/mysql/my.cnf.j2
-       dest: /root/.my.cnf
+    - name: Create my.cnf
+      template:
+        src: templates/mysql/my.cnf.j2
+        dest: /root/.my.cnf
 
   # - name: Create mysqld.cnf
   #   template:
