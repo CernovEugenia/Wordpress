@@ -85,7 +85,7 @@
         state: started
     - name: Create nginx config
       template:
-        src: templates/nginx/default.j2
+        src: templates/nginx/default.j2s
         dest: /etc/nginx/sites-available/default
       notify: restart nginx
 
