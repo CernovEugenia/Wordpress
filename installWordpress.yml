@@ -45,7 +45,8 @@
       mysql_user:
         name: ""
         state: absent
-    #  when:
+      when: mysql_new_root_pass.changed
+
     - name: Remove test database
       mysql_db:
         name: test
