@@ -139,8 +139,7 @@
         src: templates/wordpress/wp-config.php
         dest: /var/www/book.example.com/wp-config.php
 
-  #  - name: create backup MySQL
-  #    command: mysqldump wordpress > /tmp/wp-database.sql
+
 
     - name: Does the database exist?
       command: mysql -u root wordpress -e "SELECT ID FROM wordpress.wp_users LIMIT 1;"
