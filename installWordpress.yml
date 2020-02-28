@@ -105,9 +105,12 @@
       notify: restart mysql
 
       # WordPress
+    - name: install Unzip
+      command: apt-get install unzip 
+
     - name: Unzip WordPress
       unarchive:
-        src: /.git/files/wordpress-5.3.2-fr_FR.zip
+        src: files/wordpress-5.3.2-fr_FR.zip
         dest: /tmp
         creates: /tmp/wordpress/wp-settings.php
     - name: Create project folder
